@@ -82,6 +82,22 @@ let hello_message = "Hello, world!";
 But the VSCode's extension [rust-analyzer](https://rust-analyzer.github.io/)
 suggested me to do it explicitly.
 
+`Rust` has some `primitive types`:
+
+- Numbers
+  - Integer: (Signed (i) and Unsigned(u)): you must specify it's bit size (8-bit,
+    16-bit, 32-bit, 64-bit or 128-bit). However, you can set a bit size that
+    depends on the kind of computer that runs the program (isize, usize).
+  - Floating point: (f32, f64). On modern CPUs, both have approximately the same
+    speed but f64 has grater precision.
+- Booleans
+- Characters
+
+It also has more complex ones like `Strings Slice` (Strings, &str and more) or
+`Tuples`.
+
+> Characters and Strings Slice are valid `UTF-8` representations (like emojis).
+
 ### Displaying
 
 To display it's value you need the `println!` function that needs a string
